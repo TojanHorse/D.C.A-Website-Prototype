@@ -1,0 +1,64 @@
+.geu-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.geu-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.geu-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 5px;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.geu-text:hover,
+.geu-text:visited:hover {
+  color: purple; 
+}
+
+.geu-paragraph {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .geu-logo-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .geu-logo {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .text-container {
+    align-items: flex-start;
+  }
+
+  .geu-text,
+  .geu-paragraph {
+    text-align: left;
+  }
+}
